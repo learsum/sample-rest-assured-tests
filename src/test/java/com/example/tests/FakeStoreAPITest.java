@@ -51,7 +51,7 @@ public class FakeStoreAPITest extends BaseTest {
                 .filter(title -> title.toLowerCase().contains(query.toLowerCase()))
                 .collect(Collectors.toList());
 
-        assertThat("There are no products containing the word "+query, filteredTitles.size(), greaterThan(0));
+        assertThat("There are no products containing the word " + query, filteredTitles.size(), greaterThan(0));
     }
 
     @Test
